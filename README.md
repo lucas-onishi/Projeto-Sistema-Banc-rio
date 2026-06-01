@@ -16,12 +16,19 @@ saldo = 0.0
 historico = []
 
 if os.path.exists(ARQUIVO_DADOS):
+    
     arquivo = open(ARQUIVO_DADOS, "rb")
+    
     dados = pickle.load(arquivo)
+    
     arquivo.close()
+    
     nome_cliente = dados["nome"]
+    
     saldo = dados["saldo"]
+    
     historico = dados["historico"]
+    
     print("Dados carregados com sucesso!")
 
 print(f"\nBem-vindo ao Banco X, {nome_cliente}!")
