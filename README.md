@@ -6,10 +6,13 @@ import pickle
 import os
 
 ARQUIVO_DADOS = "dados.pkl"
+
 SENHA_GERENTE = "Gerenci@_2026"
 
 nome_cliente = "Cliente Sem Nome"
+
 saldo = 0.0
+
 historico = []
 
 if os.path.exists(ARQUIVO_DADOS):
